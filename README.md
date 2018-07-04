@@ -1,5 +1,5 @@
-# EOS Proxy Info Contract
-This is an on-chain EOS contract (or dApp) that allows EOS proxy accounts to register additional information about themselves. This information is public, on the blockchain and freely available to be republished. An example website that uses this information is the [Aloha EOS Proxy Research Portal](https://www.alohaeos.com/vote/proxy).
+# EOS Proxy Info
+This is an on-chain EOS contract (or dApp) that allows EOS proxy accounts to register additional information about themselves, such as name and website. This information is public, on the blockchain and freely available to be republished. An example website that uses this information is the [Aloha EOS Proxy Research Portal](https://www.alohaeos.com/vote/proxy).
 
 The contract is published on the `regproxyinfo` account on the EOS Mainnet.
 
