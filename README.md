@@ -1,7 +1,7 @@
 # EOS Proxy Info
 This is an on-chain EOS contract (or dApp) that allows EOS proxy accounts to register additional information about themselves, such as name and website. This information is published on the EOS blockchain and freely available to be republished. An example website that uses this information is the [Aloha EOS Proxy Research Portal](https://www.alohaeos.com/vote/proxy).
 
-The contract is published on the `regproxyinfo` account on the EOS Mainnet.
+The contract is published on the `regproxyinfo` account on the EOS mainnet.
 
 ## Usage
 
@@ -66,3 +66,9 @@ curl -d '{"json":true,"code":"regproxyinfo","scope":"regproxyinfo","table":"prox
 
 ## Feedback
 Questions or comments? Swing by the [EOS VOTER PROXIES](https://t.me/eosproxies) channel on Telegram.
+
+## Acknowledgements
+These are the people or teams that helped contribute to this project (in alphabetical order):
+- [Aloha EOS](https://www.alohaeos.com/) developed the initial version and maintains the regproxyinfo account.
+- [DutchEOS](https://dutcheos.io/) helped test the initial version on mainnet.
+- [EOS Nation](https://eosnation.io) and their [Community Engagement Fund](https://www.youtube.com/watch?v=tUw8oWyFfeE) graciously funded the initial RAM purchase to publish on mainnet.
