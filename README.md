@@ -12,13 +12,21 @@ First thing, you should already have an EOS proxy account that you have run `reg
 The set action inserts or updates information about your account. The paramaters are:
 - proxy: Your EOS account name.
 - name: The full name of your proxy.
-- website: An http or https URL to a website, Reddit post, etc. with more information about your proxy.
+- slogan: A short description of your proxy intended to be shown in listings.
+- philosophy: Description of proxy's voting philosophy.
+- background: Optional. Background information / who is the proxy?
+- website: Optional. An http or https URL to a website, Reddit post, etc. with more information about your proxy.
+- logo_256: Optional. An http or https URL to an image with the size of 256 x 256 px.
+- telegram: Optional. Telegram account name.
+- steemit: Optional. Steemit account name.
+- twitter: Optional. Twitter account name.
+- wechat: Optional. WeChat account name.
 
 Note: This action will consume a little bit of your RAM for the storage. How much depends on the length of your data, but probably 200-500 bytes.
 
 cleos example:
 ```
-cleos -u https://api.main.alohaeos.com push action regproxyinfo set '["myproxyaccnt","My Proxy Name","https://my.proxy.website/"]' -p myproxyaccnt
+cleos -u https://api.main.alohaeos.com push action regproxyinfo set '["myproxyaccnt","My Proxy Name","For a better world","Voting philosophy","","https://my.proxy.website/","","","","",""]' -p myproxyaccnt
 ```
 
 ### Remove
