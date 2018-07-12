@@ -10,17 +10,17 @@ First thing, you should already have an EOS proxy account that you have run `reg
 ### Set
 
 The set action inserts or updates information about your account. The paramaters are:
-- *proxy* (required): Your EOS account name.
-- *name* (required, 64 char max): The full name of your proxy.
-- *slogan* (optional, 64 char max): A short description of your proxy intended to be shown in listings.
-- *philosophy* (optional, 1024 char max): Description of proxy's voting philosophy.
-- *background* (optional, 1024 char max): Background information / who is the proxy?
-- *website* (optional, 256 char max): An http or https URL to a website, Reddit post, etc. with more information about your proxy.
-- *logo_256* (optional, 256 char max): An http or https URL to an image with the size of 256 x 256 px.
-- *telegram* (optional, 64 char max): Telegram account name.
-- *steemit* (optional, 64 char max): Steemit account name.
-- *twitter* (optional, 64 char max): Twitter account name.
-- *wechat* (optional, 64 char max): WeChat account name.
+- **proxy** (required): Your EOS account name.
+- **name** (required, 64 char max): The full name of your proxy.
+- **slogan** (optional, 64 char max): A short description of your proxy intended to be shown in listings.
+- **philosophy** (optional, 1024 char max): Description of proxy's voting philosophy.
+- **background** (optional, 1024 char max): Background information / who is the proxy?
+- **website** (optional, 256 char max): An http or https URL to a website, Reddit post, etc. with more information about your proxy.
+- **logo_256** (optional, 256 char max): An http or https URL to an image with the size of 256 x 256 px.
+- **telegram** (optional, 64 char max): Telegram account name.
+- **steemit** (optional, 64 char max): Steemit account name.
+- **twitter** (optional, 64 char max): Twitter account name.
+- **wechat** (optional, 64 char max): WeChat account name.
 
 Note: This action will consume a little bit of your RAM for the storage. How much depends on the length of your data, but probably around 1kb.
 
