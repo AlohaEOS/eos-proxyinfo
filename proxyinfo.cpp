@@ -22,26 +22,23 @@ class proxyinfo_contract : public eosio::contract {
          *  @param twitter - optional. twitter account name
          *  @param wechat - optional. wechat account name
          */
-
         void set(const account_name proxy, std::string name, std::string slogan, std::string philosophy, std::string background, std::string website, std::string logo_256, std::string telegram, std::string steemit, std::string twitter, std::string wechat) {
             // Validate input
             eosio_assert(!name.empty(), "name required");
             eosio_assert(name.length() <= 64, "name too long");
 
-            eosio_assert(!slogan.empty(), "slogan required");
             eosio_assert(slogan.length() <= 64, "slogan too long");
 
-            eosio_assert(!philosophy.empty(), "philosophy required");
-            eosio_assert(philosophy.length() <= 1023, "philosophy too long");
+            eosio_assert(philosophy.length() <= 1024, "philosophy too long");
 
-            eosio_assert(background.length() <= 1023, "background too long");
+            eosio_assert(background.length() <= 1024, "background too long");
 
-            eosio_assert(website.length() <= 255, "website too long");
+            eosio_assert(website.length() <= 256, "website too long");
             if (!website.empty()) {
                 eosio_assert(website.substr(0, 4) == "http", "website should begin with http");
             }
 
-            eosio_assert(logo_256.length() <= 255, "logo_256 too long");
+            eosio_assert(logo_256.length() <= 256, "logo_256 too long");
             if (!logo_256.empty()) {
                 eosio_assert(logo_256.substr(0, 4) == "http", "logo_256 should begin with http");
             }
@@ -91,6 +88,11 @@ class proxyinfo_contract : public eosio::contract {
             }
         }
 
+        /**
+         * Remove all proxy info.
+         *
+         * @param proxy - the proxy account name.
+         */
         void remove(const account_name proxy) {
             // Require auth from the proxy account
             require_auth(proxy);
