@@ -4,7 +4,8 @@ class proxyinfo_contract : public eosio::contract {
     public:
         proxyinfo_contract(account_name self)
         :eosio::contract(self),
-        proxies(_self, _self)
+        proxies(_self, _self),
+        proxiestmp(_self, _self)
         {}
 
         /**
@@ -102,6 +103,31 @@ class proxyinfo_contract : public eosio::contract {
             proxies.erase(lookup);
         }
 
+        /**
+         * Migrate data from "proxiestmp" to "proxies", for when we are changing schema.
+         */
+        void migratetmp() {
+            require_auth(_self);
+            for (const auto & row : proxiestmp) {
+                //eosio::print("Migrating owner=", row.owner, ", name=", row.name, ", website=", row.website, "\n");
+                proxies.emplace(_self, [&](auto & i) {
+                    i.owner = row.owner;
+                    i.name = row.name;
+                    i.website = row.website;
+                });
+            }
+        }
+
+        /**
+         * Erase all data in "proxiestmp", used when we are changing schema.
+         */
+        void erasetmp() {
+            require_auth(_self);
+            for(auto itr = proxiestmp.begin(); itr != proxiestmp.end();) {
+                itr = proxiestmp.erase(itr);
+            }
+        }
+
     private:
         // @abi table proxies i64
         struct proxy {
@@ -123,6 +149,19 @@ class proxyinfo_contract : public eosio::contract {
 
         typedef eosio::multi_index<N(proxies), proxy> proxy_table;
         proxy_table proxies;
+
+        // @abi table proxiestmp i64
+        struct proxytmp {
+            account_name owner;
+            std::string name;
+            std::string website;
+
+            auto primary_key()const { return owner; }
+            EOSLIB_SERIALIZE(proxytmp, (owner)(name)(website))
+        };
+
+        typedef eosio::multi_index<N(proxiestmp), proxytmp> proxytmp_table;
+        proxytmp_table proxiestmp;
 };
 
-EOSIO_ABI(proxyinfo_contract, (set)(remove))
+EOSIO_ABI(proxyinfo_contract, (set)(remove)(migratetmp)(erasetmp))
