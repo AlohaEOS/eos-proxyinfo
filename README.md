@@ -3,7 +3,16 @@ This is an on-chain EOS contract (or dApp) that allows EOS proxy accounts to reg
 
 The contract is published on the `regproxyinfo` account on the EOS mainnet.
 
-## Usage
+## GUI Usage
+
+For a GUI tool that interacts with this dApp try one of the following:
+
+- [eostoolkit.io by GenerEOS](https://eostoolkit.io/vote/createproxy)
+- [EOS Vote Tracker by EOS Mediterranean](https://votetracker.eosmedi.com/#/submit-proxy-info)
+
+These tools use Scatter for secure authentication.
+
+## Command Line Usage
 
 First thing, you should already have an EOS proxy account that you have run `regproxy` on. If you haven't got that far, check out [EOS Proxy Voting: Everything You Need To Know](https://medium.com/coinmonks/eos-proxy-voting-everything-you-need-to-know-e4c9783249e3).
 
@@ -79,4 +88,6 @@ Questions or comments? Swing by the [EOS VOTER PROXIES](https://t.me/eosproxies)
 These are the people or teams that helped contribute to this project (in alphabetical order):
 - [Aloha EOS](https://www.alohaeos.com/) developed the initial version and maintains the regproxyinfo account.
 - [DutchEOS](https://dutcheos.io/) helped test the initial version on mainnet.
+- [EOS Mediterranean](https://eosmedi.com/) for adding support to [EOS Vote Tracker](https://votetracker.eosmedi.com/#/submit-proxy-info).
 - [EOS Nation](https://eosnation.io) and their [Community Engagement Fund](https://www.youtube.com/watch?v=tUw8oWyFfeE) graciously funded the initial RAM purchase to publish on mainnet.
+- [GenerEOS](https://www.genereos.io/) for adding support to [eostoolkit.io](https://eostoolkit.io/vote/createproxy).
