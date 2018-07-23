@@ -100,7 +100,9 @@ class proxyinfo_contract : public eosio::contract {
 
             // Delete record
             auto lookup = proxies.find(proxy);
-            proxies.erase(lookup);
+            if (lookup != proxies.end()) {
+                proxies.erase(lookup);
+            }
         }
 
         /**
