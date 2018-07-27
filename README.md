@@ -9,8 +9,7 @@ For a GUI tool that interacts with this dApp try one of the following:
 
 - [eostoolkit.io by GenerEOS](https://eostoolkit.io/vote/createproxy)
 - [EOS Vote Tracker by EOS Mediterranean](https://votetracker.eosmedi.com/#/submit-proxy-info)
-
-These tools use Scatter for secure authentication.
+- [eos-voter by Greymass](https://github.com/greymass/eos-voter) (Tools -> Smart Contracts, then enter "regproxyinfo" and select "set")
 
 ## Command Line Usage
 
