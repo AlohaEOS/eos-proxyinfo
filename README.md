@@ -10,6 +10,7 @@ For a GUI tool that interacts with this dApp try one of the following:
 - [eostoolkit.io by GenerEOS](https://eostoolkit.io/vote/createproxy)
 - [EOS Vote Tracker by EOS Mediterranean](https://votetracker.eosmedi.com/#/submit-proxy-info)
 - [eos-voter by Greymass](https://github.com/greymass/eos-voter) (Tools -> Smart Contracts, then enter "regproxyinfo" and select "set")
+- [MyEOSKit by EOS ASIA](https://www.myeoskit.com/#/tools/proxy)
 
 ## Command Line Usage
 
@@ -87,6 +88,7 @@ Questions or comments? Swing by the [EOS VOTER PROXIES](https://t.me/eosproxies)
 These are the people or teams that helped contribute to this project (in alphabetical order):
 - [Aloha EOS](https://www.alohaeos.com/) developed the initial version and maintains the regproxyinfo account.
 - [DutchEOS](https://dutcheos.io/) helped test the initial version on mainnet.
+- [EOS ASIA](https://www.eosasia.one/) for adding support to [MyEOSKit](https://www.myeoskit.com/#/tools/proxy).
 - [EOS Mediterranean](https://eosmedi.com/) for adding support to [EOS Vote Tracker](https://votetracker.eosmedi.com/#/submit-proxy-info).
 - [EOS Nation](https://eosnation.io) and their [Community Engagement Fund](https://www.youtube.com/watch?v=tUw8oWyFfeE) graciously funded the initial RAM purchase to publish on mainnet.
 - [GenerEOS](https://www.genereos.io/) for adding support to [eostoolkit.io](https://eostoolkit.io/vote/createproxy).
