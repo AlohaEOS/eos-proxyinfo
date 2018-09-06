@@ -11,6 +11,7 @@ For a GUI tool that interacts with this dApp try one of the following:
 - [EOS Vote Tracker by EOS Mediterranean](https://votetracker.eosmedi.com/#/submit-proxy-info)
 - [eos-voter by Greymass](https://github.com/greymass/eos-voter) (Tools -> Smart Contracts, then enter "regproxyinfo" and select "set")
 - [MyEOSKit by EOS ASIA](https://www.myeoskit.com/#/tools/proxy)
+- [TokenPocket](https://www.mytokenpocket.vip)
 
 ## Command Line Usage
 
