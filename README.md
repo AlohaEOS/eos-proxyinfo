@@ -10,6 +10,7 @@ For a GUI tool that interacts with this dApp try one of the following:
 - [eostoolkit.io by GenerEOS](https://eostoolkit.io/vote/createproxy)
 - [EOS Vote Tracker by EOS Mediterranean](https://votetracker.eosmedi.com/#/submit-proxy-info)
 - [eos-voter by Greymass](https://github.com/greymass/eos-voter) (Tools -> Smart Contracts, then enter "regproxyinfo" and select "set")
+- [MEET.ONE Wallet by MEET.ONE](https://meet.one/download/en?changelang=1)
 - [MyEOSKit by EOS ASIA](https://www.myeoskit.com/#/tools/proxy)
 - [TokenPocket](https://www.mytokenpocket.vip)
 
