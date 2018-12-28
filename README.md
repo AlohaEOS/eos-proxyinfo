@@ -13,6 +13,7 @@ For a GUI tool that interacts with this dApp try one of the following:
 - [MEET.ONE Wallet by MEET.ONE](https://meet.one/download/en?changelang=1)
 - [MyEOSKit by EOS ASIA](https://www.myeoskit.com/#/tools/proxy)
 - [TokenPocket](https://www.mytokenpocket.vip)
+- [EOS LIVE](https://eos.live/download) (Wallet -> Vote, then default is Proxy)
 
 ## Command Line Usage
 
